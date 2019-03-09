@@ -50,11 +50,6 @@ class Question extends Component {
             </button>
           </div>
         </div>
-        <ReCAPTCHA
-          ref={this.recaptchaRef}
-          size="invisible"
-          sitekey="6LdEfJYUAAAAAMRptY3nF6Jqzo5mInyqXQdjWgHp"
-        />
       </div>
     );
   }
