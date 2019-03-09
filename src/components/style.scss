@@ -1,0 +1,49 @@
+.Question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .main-image {
+    max-width: 200px;
+    animation: spin 5s infinite linear;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .question-phrase {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .wrapper-vote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &.bolacha {
+        margin-right: 50px;
+      }
+      .score {
+        text-align: center;
+        font-size: 40px;
+      }
+      button {
+        margin-top: 10px;
+        font-size: 20px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
